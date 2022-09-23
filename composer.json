@@ -1,0 +1,7 @@
+{
+    "require": {
+        "andrey-tech/bitrix24-api-php": "^1.6",
+      "ext-json": "*",
+      "ext-mysqli": "*"
+    }
+}
