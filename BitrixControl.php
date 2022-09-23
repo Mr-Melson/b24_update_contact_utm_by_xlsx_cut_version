@@ -34,7 +34,12 @@ if (isset($_POST['b24_source'])) {
             while ($row = $user_ids->fetch_assoc()) {
         
                 $updated_contacts[] = $row['contact_id'];
-                $contact_results[] = $bx24->updateContact($row['contact_id'], $updated_contacts);
+
+                $contact_data = [
+                    'UTM_SOURCE' => $row['utm_source'],
+                    'UTM_MEDIUM' => $row['utm_medium']
+                ];
+                $contact_results[] = $bx24->updateContact($row['contact_id'], $contact_data);
             }
         } else {
             $end_table = true;
