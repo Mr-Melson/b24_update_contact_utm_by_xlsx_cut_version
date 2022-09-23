@@ -27,7 +27,7 @@ $( document ).ready(function() {
                 page++;
                 setTimeout(() => {
                     setNextStep(page)
-                }, 1000);
+                }, 5000);
             } else {
                 $('#log').append('<h2>Алгоритм завершен!</h2>');
             }
@@ -39,7 +39,7 @@ $( document ).ready(function() {
                 page++;
                 setTimeout(() => {
                     setNextStep(page)
-                }, 1000);
+                }, 5000);
             }
         });
     }
